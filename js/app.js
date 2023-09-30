@@ -32,10 +32,24 @@ function displayYears() {
     // get max year
     let maxYear = fixNumbers(curentYear)
     console.log(maxYear);
-    
+
     // get min year
     let minYear = maxYear - 20
     console.log(minYear);
+
+    // access to the select tag
+    const selectYear = document.querySelector('#year')
+
+    // create for loop for making option tag
+    for (let i = maxYear; i >= minYear; i--) {
+        // create option tag
+        const optionTag = document.createElement('option')
+        optionTag.value = i;
+        optionTag.innerText = `سال ${i}`;
+
+        // append option to the selectYear
+        selectYear.appendChild(optionTag)
+    }
 }
 
 
