@@ -3,10 +3,15 @@
 
 
 // Events
-
+document.addEventListener('DOMContentLoaded', afterLoad)
 
 
 // Functions
+function afterLoad() {
+    displayYears()
+}
+
+
 // User Interface Functions
 // Show Years
 function displayYears() {
@@ -53,4 +58,4 @@ function displayYears() {
 }
 
 
-displayYears()
+
