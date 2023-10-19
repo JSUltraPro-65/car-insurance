@@ -8,3 +8,4 @@ function insuranceCase(inCarMake, inCarYear, inLevel) {
 
 console.log(insuranceCase(make, year, level.value));
 
+
